@@ -32,7 +32,7 @@ The extra credit I attempted was using libraries/modules not specifically covere
     ** NOTE: all API responses will be of JSON type **
 
 7) To test endpoints involving updating existing products, deleting products and posting new products, it would be useful to use a testing application like Postman through which you can easily send product information in JSON format and specify the type of request you are doing (i.e. "POST", "DELETE")
-8) To shut down the processes, run "docker-compose down" and then "docker ps -a" to identify the container that was recently shut down and remove it.
+8) To shut down the processes, run "docker-compose down" and then "docker ps -a" (in another terminal that is not running the container) to identify the container that was recently shut down and remove it.
 
 
 #### SOURCES:
