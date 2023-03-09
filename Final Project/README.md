@@ -13,10 +13,12 @@ The extra credit I attempted was using libraries/modules not specifically covere
 1) Ensure app.py, Dockerfile, requirements.txt, and docker-compose.yml are in the same directory
 2) Create a virtual environment using the provided requirements.txt file
 3) Then build the Docker container using the terminal commands:
-    - "docker-compose build"
-    - "docker-compose up -d"
 
-    which will allow you interact with the database directly in postgres
+```bash
+    $ docker-compose build
+    $ docker-compose up -d
+```
+
 4) To test the API endpoints, first initialize the database with skincare products using the route:
     /dbinit
 5) Basic queries (HTTP "GET" requests) can be tested the following endpoint:
@@ -32,7 +34,10 @@ The extra credit I attempted was using libraries/modules not specifically covere
 7) To shut down the processes, run "docker-compose down" and then "docker ps -a" (in another terminal that is not running the container) to identify the container that was recently shut down and remove it.
 
 *9) To interact directly with the database in Postgres, use the command:
-    - "docker exec -it db psql -U postgres"
+
+```bash
+    docker exec -it db psql -U postgres
+```
 
 #### SOURCES:
 1) 
