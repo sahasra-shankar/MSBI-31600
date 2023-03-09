@@ -24,10 +24,10 @@ The extra credit I attempted was using libraries/modules not specifically covere
 6) Basic queries (HTTP "GET" requests) can be tested using the base route:
     "http://localhost:8181/api/v2/resources/skincareproducts"
     to which query parameters can be specified; examples of some queries that can be tested are:
-    a) "http://localhost:8181/api/v2/resources/skincareproducts?brand=INNISFREE, the ordinary"(which asks for all products by the brands innisfree and The Ordinary)
-    b) "http://localhost:8181/api/v2/resources/skincareproducts?skinTypes=Dry&productType=Face Mask" (which asks for face mask products for a dry skin type)
-    c) "http://localhost:8181/api/v2/resources/skincareproducts?name=The Water Cream Oil-Free Pore Minimizing Moisturizer" (which asks for details about the specific product called The Water Cream Oil-Free Pore Minimizing Moisturizer)
-    d) "http://localhost:8181/api/v2/resources/skincareproducts?id=4" (gets product details for the product with the database id of 4)
+        a) "http://localhost:8181/api/v2/resources/skincareproducts?brand=INNISFREE, the ordinary"(which asks for all products by the brands innisfree and The Ordinary)
+        b) "http://localhost:8181/api/v2/resources/skincareproducts?skinTypes=Dry&productType=Face Mask" (which asks for face mask products for a dry skin type)
+        c) "http://localhost:8181/api/v2/resources/skincareproducts?name=The Water Cream Oil-Free Pore Minimizing Moisturizer" (which asks for details about the specific product called The Water Cream Oil-Free Pore Minimizing Moisturizer)
+        d) "http://localhost:8181/api/v2/resources/skincareproducts?id=4" (gets product details for the product with the database id of 4)
 
     ** NOTE: all API responses will be of JSON type **
 
