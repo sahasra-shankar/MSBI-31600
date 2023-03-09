@@ -19,9 +19,7 @@ The extra credit I attempted was using libraries/modules not specifically covere
     $ docker-compose up -d
 ```
 
-4) To test the API endpoints, first initialize the database with skincare products using the route:
-    /dbinit
-5) Basic queries (HTTP "GET" requests) can be tested the following endpoint:
+4) Basic queries (HTTP "GET" requests) can be tested the following endpoint:
     to which query parameters can be specified; examples of some queries that can be tested are:
      1. /api/v2/resources/skincareproducts?brand=INNISFREE, the ordinary(which asks for all products by the brands innisfree and The Ordinary)
      2. /api/v2/resources/skincareproducts?skinTypes=Dry&productType=Face Mask (which asks for face mask products for a dry skin type)
@@ -30,10 +28,10 @@ The extra credit I attempted was using libraries/modules not specifically covere
 
     - ** NOTE: all API responses will be of JSON type **
     - *** Alternatively, "GET" requests with specified parameters can be tested with the provided Postman collection
-6) To test endpoints involving updating existing products, deleting products and posting new products, it would be useful to use a testing application like Postman through which you can easily send product information in JSON format and specify the type of request you are doing (i.e. "POST", "DELETE")
-7) To shut down the processes, run "docker-compose down" and then "docker ps -a" (in another terminal that is not running the container) to identify the container that was recently shut down and remove it.
+5) To test endpoints involving updating existing products, deleting products and posting new products, it would be useful to use a testing application like Postman through which you can easily send product information in JSON format and specify the type of request you are doing (i.e. "POST", "DELETE")
+6) To shut down the processes, run "docker-compose down" and then "docker ps -a" (in another terminal that is not running the container) to identify the container that was recently shut down and remove it.
 
-*9) To interact directly with the database in Postgres, use the command:
+*7) To interact directly with the database in Postgres, use the command:
 
 ```bash
     docker exec -it db psql -U postgres
