@@ -1,0 +1,181 @@
+{
+	"info": {
+		"_postman_id": "9b5a80d1-cb19-45ee-801b-4874f0ba35e9",
+		"name": "Skincare Products API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Database Initialization",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8181/dbinit",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8181",
+					"path": [
+						"dbinit"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Products",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://{{HOSTNAME}}:{{HTTP_PORT}}/api/v2/resources/skincareproducts/all",
+					"protocol": "http",
+					"host": [
+						"{{HOSTNAME}}"
+					],
+					"port": "{{HTTP_PORT}}",
+					"path": [
+						"api",
+						"v2",
+						"resources",
+						"skincareproducts",
+						"all"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": null,
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Skincare Product by Query",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://{{HOSTNAME}}:{{HTTP_PORT}}/api/v2/resources/skincareproducts?id=4&skinTypes=Dry,Sensitive",
+					"protocol": "http",
+					"host": [
+						"{{HOSTNAME}}"
+					],
+					"port": "{{HTTP_PORT}}",
+					"path": [
+						"api",
+						"v2",
+						"resources",
+						"skincareproducts"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "4"
+						},
+						{
+							"key": "skinTypes",
+							"value": "Dry,Sensitive"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Skincare Product by ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://{{HOSTNAME}}:{{HTTP_PORT}}/api/v2/resources/skincareproducts/<sp_id>",
+					"protocol": "http",
+					"host": [
+						"{{HOSTNAME}}"
+					],
+					"port": "{{HTTP_PORT}}",
+					"path": [
+						"api",
+						"v2",
+						"resources",
+						"skincareproducts",
+						"<sp_id>"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Skincare Product by ID",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "http://{{HOSTNAME}}:{{HTTP_PORT}}/api/v2/resources/skincareproducts/<sp_id>",
+					"protocol": "http",
+					"host": [
+						"{{HOSTNAME}}"
+					],
+					"port": "{{HTTP_PORT}}",
+					"path": [
+						"api",
+						"v2",
+						"resources",
+						"skincareproducts",
+						"<sp_id>"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add Skincare Product",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://{{HOSTNAME}}:{{HTTP_PORT}}/api/v2/resources/skincareproducts",
+					"protocol": "http",
+					"host": [
+						"{{HOSTNAME}}"
+					],
+					"port": "{{HTTP_PORT}}",
+					"path": [
+						"api",
+						"v2",
+						"resources",
+						"skincareproducts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Skincare Product by ID",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://{{HOSTNAME}}:{{HTTP_PORT}}/api/v2/resources/skincareproducts/<sp_id>",
+					"protocol": "http",
+					"host": [
+						"{{HOSTNAME}}"
+					],
+					"port": "{{HTTP_PORT}}",
+					"path": [
+						"api",
+						"v2",
+						"resources",
+						"skincareproducts",
+						"<sp_id>"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
