@@ -28,8 +28,8 @@ The extra credit I attempted was using libraries/modules not specifically covere
      3. /api/v2/resources/skincareproducts?name=The Water Cream Oil-Free Pore Minimizing Moisturizer (which asks for details about the specific product called The Water Cream Oil-Free Pore Minimizing Moisturizer)
      4. /api/v2/resources/skincareproducts?id=4 (gets product details for the product with the database id of 4)
 
-    ** NOTE: all API responses will be of JSON type **
-    *** Alternatively, "GET" requests with specified parameters can be tested with the provided Postman collection
+    - ** NOTE: all API responses will be of JSON type **
+    - *** Alternatively, "GET" requests with specified parameters can be tested with the provided Postman collection
 6) To test endpoints involving updating existing products, deleting products and posting new products, it would be useful to use a testing application like Postman through which you can easily send product information in JSON format and specify the type of request you are doing (i.e. "POST", "DELETE")
 7) To shut down the processes, run "docker-compose down" and then "docker ps -a" (in another terminal that is not running the container) to identify the container that was recently shut down and remove it.
 
