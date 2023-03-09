@@ -9,3 +9,11 @@ This assignment consists of three coding questions:
   2) Create two comprehensions-- one that only kept integers from the user input that were perfect squares and the other that got the average of a list of integers-- and then wrote each as a lambda function
   
   3) Two sets of code: one to get the dot product of two random 2x2 integer matrices and another to sort a random list of random lists. Each was timed and then optimized to be more efficient and timed again (using the timeit module). 
+
+## Homework Assignment 2-
+This assignment had two short answer questions relating to network layer protocols (TCP and UDP) and sqlalchemy. In addition, there were also two coding problems that required:
+  1) An implementation of a number guessing game using either a TCP or UDP protocol, by way of a client/server program. To do this, two Jupyter notebooks were used-- one for the client and another for the server.
+  2) Usage of the requests module to request four(4) different pieces of data from an API of choice, from which the responses should be stored in two persistent file formats (i.e. XML, JSON)
+
+## Homework Assignment 3- 
+For this assignment, 
