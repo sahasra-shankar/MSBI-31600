@@ -14,8 +14,7 @@ The extra credit I attempted was using libraries/modules not specifically covere
 2) Create a virtual environment using the provided requirements.txt file
 3) Then build the Docker container using the terminal commands:
     - "docker-compose build"
-    - "docker-compose up -d db"
-    - "docker-compose up skincare-svc"
+    - "docker-compose up -d"
 4) Creation of the skincare products database can be verified in another terminal with the command:
     - "docker exec -it db psql -U postgres"
     which will allow you interact with the database directly in postgres
