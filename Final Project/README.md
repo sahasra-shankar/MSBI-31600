@@ -10,7 +10,7 @@ This project was definitely very challenging, especially conceptually. It took m
 The extra credit I attempted was using libraries/modules not specifically covered in class, namely Flask and to some extent sqlalchemy (from flask_sqlalchemy) because although we superficially went over it during this course, we did not really implement it in any of our assignments. I also implemented "try, except" for "GET" requests in the cases that multiple values were specified for parameters that allow for it. 
 
 ### How to run the project:
-1) Ensure app.py, Dockerfile, requirements.txt, and docker-compose.yml are in the same directory
+1) Ensure app.py, Dockerfile, requirements.txt, wait-for-it.sh, and docker-compose.yml are in the same directory
 2) Create a virtual environment using the provided requirements.txt file
 3) Then build the Docker container using the terminal commands:
 
