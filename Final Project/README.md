@@ -40,6 +40,6 @@ The extra credit I attempted was using libraries/modules not specifically covere
 ```
 
 #### SOURCES:
-1) 
+1) https://www.digitalocean.com/community/tutorials/how-to-use-one-to-many-database-relationships-with-flask-sqlalchemy --> was integral in helping me learn how to use Flask and sqlalchemy to build my API and database
 2) https://blog.teclado.com/query-string-arguments-in-flask-rest-apis/ --> helped me figure out how to take in multiple values for a single query parameter as this was a large part of me being able to achieve what I wanted with this API
 3) https://www.tutorialspoint.com/sqlalchemy/sqlalchemy_orm_filter_operators.htm --> was key in guiding me through sqlalchemy syntax which helped me write the database queries I wanted
