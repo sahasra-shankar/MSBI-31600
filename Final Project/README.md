@@ -15,24 +15,24 @@ The extra credit I attempted was using libraries/modules not specifically covere
 3) Then build the Docker container using the terminal commands:
     - "docker-compose build"
     - "docker-compose up -d"
-4) Creation of the skincare products database can be verified in another terminal with the command:
-    - "docker exec -it db psql -U postgres"
+
     which will allow you interact with the database directly in postgres
-5) To test the API endpoints, first initialize the database with skincare products using the route:
-    "http://localhost:8181/dbinit"
-6) Basic queries (HTTP "GET" requests) can be tested using the base route:
-    "http://localhost:8181/api/v2/resources/skincareproducts"
+4) To test the API endpoints, first initialize the database with skincare products using the route:
+    /dbinit
+5) Basic queries (HTTP "GET" requests) can be tested the following endpoint:
     to which query parameters can be specified; examples of some queries that can be tested are:
-     1. "http://localhost:8181/api/v2/resources/skincareproducts?brand=INNISFREE, the ordinary"(which asks for all products by the brands innisfree and The Ordinary)
-     2. "http://localhost:8181/api/v2/resources/skincareproducts?skinTypes=Dry&productType=Face Mask" (which asks for face mask products for a dry skin type)
-     3. "http://localhost:8181/api/v2/resources/skincareproducts?name=The Water Cream Oil-Free Pore Minimizing Moisturizer" (which asks for details about the specific product called The Water Cream Oil-Free Pore Minimizing Moisturizer)
-     4. "http://localhost:8181/api/v2/resources/skincareproducts?id=4" (gets product details for the product with the database id of 4)
+     1. /api/v2/resources/skincareproducts?brand=INNISFREE, the ordinary(which asks for all products by the brands innisfree and The Ordinary)
+     2. /api/v2/resources/skincareproducts?skinTypes=Dry&productType=Face Mask (which asks for face mask products for a dry skin type)
+     3. /api/v2/resources/skincareproducts?name=The Water Cream Oil-Free Pore Minimizing Moisturizer (which asks for details about the specific product called The Water Cream Oil-Free Pore Minimizing Moisturizer)
+     4. /api/v2/resources/skincareproducts?id=4 (gets product details for the product with the database id of 4)
 
     ** NOTE: all API responses will be of JSON type **
+    *** Alternatively, "GET" requests with specified parameters can be tested with the provided Postman collection
+6) To test endpoints involving updating existing products, deleting products and posting new products, it would be useful to use a testing application like Postman through which you can easily send product information in JSON format and specify the type of request you are doing (i.e. "POST", "DELETE")
+7) To shut down the processes, run "docker-compose down" and then "docker ps -a" (in another terminal that is not running the container) to identify the container that was recently shut down and remove it.
 
-7) To test endpoints involving updating existing products, deleting products and posting new products, it would be useful to use a testing application like Postman through which you can easily send product information in JSON format and specify the type of request you are doing (i.e. "POST", "DELETE")
-8) To shut down the processes, run "docker-compose down" and then "docker ps -a" (in another terminal that is not running the container) to identify the container that was recently shut down and remove it.
-
+*9) To interact directly with the database in Postgres, use the command:
+    - "docker exec -it db psql -U postgres"
 
 #### SOURCES:
 1) 
