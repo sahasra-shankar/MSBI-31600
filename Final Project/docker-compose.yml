@@ -1,0 +1,32 @@
+version: '3'  # version of compose format 
+
+services:
+
+  skincare-svc:
+    build: . # path is relative to docker-compose.yml localtion
+    container_name: spapp
+    image: spapp
+    volumes:
+      - .:/spapp # mount point
+    ports:
+      - 80:8000  # host:container
+    environment:
+      - DATABASE_URL=postgresql://postgres:postgres@db:5432/postgres
+    command: ["./wait-for-it.sh", "db:5432", "--", "flask", "run", "--host=0.0.0.0","--port=8000"]
+    depends_on:
+      - db
+  db:
+    container_name: db
+    image: postgres:13
+    ports:
+      - "5432:5432"
+    environment:
+      - POSTGRES_PASSWORD=postgres
+      - POSTGRES_USER=postgres
+      - POSTGRES_DB=postgres
+    volumes:
+      - skdata:/var/lib/postgresql/data
+
+
+volumes:
+  skdata: {}
