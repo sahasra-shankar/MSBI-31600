@@ -13,7 +13,13 @@ This assignment consists of three coding questions:
 ## Homework Assignment 2-
 This assignment had two short answer questions relating to network layer protocols (TCP and UDP) and sqlalchemy. In addition, there were also two coding problems that required:
   1) An implementation of a number guessing game using either a TCP or UDP protocol, by way of a client/server program. To do this, two Jupyter notebooks were used-- one for the client and another for the server.
+  
   2) Usage of the requests module to request four(4) different pieces of data from an API of choice, from which the responses should be stored in two persistent file formats (i.e. XML, JSON)
 
 ## Homework Assignment 3- 
-For this assignment, 
+For this homework assignment, some research was done on Matplotlib and another visualization toolkit of choice, and how each differs (when one would be preferred over the other) for the first short answer question. The second short answer question prompted research on various types of graphical APIs and how they differ from tkinter. The coding question in this assignment asked for:
+  1) Creation of a GUI where a user can do both backward and forward unit conversion 
+  
+ 
+## Final Project (Flask API using SQLAlchemy)
+  (go to FinalProject folder)
